@@ -19,7 +19,7 @@ CFLAGS_REMOVE_return_address.o = -pg
 obj-y		:= elf.o entry-common.o irq.o opcodes.o \
 		   process.o ptrace.o reboot.o \
 		   setup.o signal.o sigreturn_codes.o \
-		   stacktrace.o sys_arm.o time.o traps.o sys_noargs.o sys_onearg.o
+		   stacktrace.o sys_arm.o time.o traps.o
 
 ifneq ($(CONFIG_ARM_UNWIND),y)
 obj-$(CONFIG_FRAME_POINTER)	+= return_address.o
