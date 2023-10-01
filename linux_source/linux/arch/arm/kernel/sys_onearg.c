@@ -12,7 +12,7 @@
 #include <linux/syscalls.h>
 
 //Define a system call implementation that takes no arguments
-SYSCALL_DEFINE1( your_name, int, param_name ){
+SYSCALL_DEFINE1(sys_onearg, int, param_name ){
 
         // print out a simple message indicating the function was called, and return SUCCESS
         printk("Someone invoked the sys_onearg system call with parameter %d", param_name);
